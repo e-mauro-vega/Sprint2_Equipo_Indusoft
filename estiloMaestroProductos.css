@@ -1,0 +1,116 @@
+
+body{
+    background: url('../imagenes/indusoft.jpg') #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 350px;
+
+}
+
+
+header {
+    width: 100%;
+    background: #4e94ab;
+    border-radius: 5px;
+  
+    
+}
+
+
+#btn-menu{
+    display: none; 
+   
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+    position: relative;
+    justify-content: center;
+   
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.Menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.Menu li:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Menu li a{
+
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Menu li{
+    border-right: 1px solid #fff;
+}
+
+@media (max-width: 550px){
+    header label{
+        display: block;
+    }
+.Menu{
+    position: absolute;
+    background: #4e94ab;
+    width: 70%;
+    margin-left: -80%;
+    transition: all 0.5s;
+}
+
+.Menu ul{
+    flex-direction: column;
+}
+
+.Menu li{
+    border-top:1px solid #fff ;
+}
+#btn-menu:checked ~ .Menu{
+    margin: 0;
+
+}
+
+#btn-menu:checked ~ .indusfot-logo img{
+    left: 5rem;
+    width: 40%;
+}
+
+}
+
+
+
+
+.indusfot-logo img{
+    margin: 0;
+    width: 80%;
+    padding:40px 50px;
+    
+}

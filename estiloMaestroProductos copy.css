@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url('../imagenes/indusoft.jpg') #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    background: #ffffff;
+    padding: 200px 200px;
+    border-radius: 20px;
+    margin-top: 250px;
+}
+
+
+.indusfot-logo img{  
+    width: 100%;
+    position: relative;
+    align-items: center;
+} 
+
+header {
+    width: 100%;
+    background: #4e94ab;
+}
+
+#btn-menu{
+    display: none; 
+}
+
+
+
+header label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}

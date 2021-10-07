@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logueo 2 indusoft</title>
+   
+    <link rel="stylesheet" href="estiloLogin.css">  
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="636490882802-38gmqmg68dr89li9mgsm1kuhg8l2h5jg.apps.googleusercontent.com">
+  
+
+</head>
+<body>
+    
+
+    <main>
+        <div class="contenedor__todo">
+            <!--caja de ingreso -->
+            <div class="caja__fondo">
+                <div class="caja__inicio">
+                    <h3>Ya tienes cuenta!</h3>
+                    <p>Inicia tu sesión ahora! </p>
+                    <button id="boton_inicio_sesión">Iniciar Sesión</button>
+                   
+
+
+                </div>
+                <div class="caja__Registro">
+                    <h3>Aun no tienes cuenta?</h3>
+                    <p>Registrate ahora! </p>
+                    <button id="boton_registro"><a class="boton-personalizado"
+                            href="indexRegister.html">Registrate</a></button>
+                </div>
+            </div>
+
+            <div class="contenedor_login">
+                
+                <!--caja de formularios -->
+                <form action="" class="formulario__login">
+
+                                                
+                                 <div class="indusfot-logo">
+                                    <img src="imagenes/indusoft1.png" alt="logo-indusoft">
+                                </div>
+                    <h2> Iniciar Sesión <h2>
+                            <input type="email" id="correo" name="correo" placeholder="usuario@indusoft.co" />
+                            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" />
+                            <button type="submit"><a class="boton-personalizado" href="indexMaestroProductos.html">Ingresar</a> </button>
+                            
+                            
+
+
+                            <p>Inicia sesión con</p>
+                            <div class="social-login">
+                                  
+                               <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                               <!-- <a href="#" onclick="signOut();">Sign out</a> -->
+               
+                            </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <script >
+         function onSignIn(googleUser) {
+           var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+         console.log('Name: ' + profile.getName());
+         console.log('Image URL: ' + profile.getImageUrl());
+         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+         var id_token = googleUser.getAuthResponse().id_token;
+         console.log(id_token);
+
+                function signOut() {
+                 var auth2 = gapi.auth2.getAuthInstance();
+                 auth2.signOut().then(function () {
+                     console.log('User signed out.');
+                 });
+             }
+        }
+
+    </script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

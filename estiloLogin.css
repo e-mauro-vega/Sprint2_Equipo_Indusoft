@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url('../imagenes/indusoft.jpg') #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.social-login-element{
+    font-size: 44px;
+}
+
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 400px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__fondo{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur (10px) ;
+    background-color: white)
+}
+
+.caja__fondo div{
+    margin: 100px 40px;
+    color: seashell;
+    transition: all 500ms;
+}
+
+.caja__fondo div p,
+.caja__fondo div button {
+    margin-top: 30px;   
+}
+
+.caja__fondo div h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+.caja__fondo button{
+    padding: 10px 35px;
+    border: 1.5px solid #fff;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    color: whitesmoke;
+    outline:none ;
+    transition: 300ms;
+    text-decoration: none
+    
+
+}
+
+.caja__fondo button:hover{
+    background: whitesmoke;
+    color: rgb(116, 148, 235);
+    text-decoration: none
+}
+
+.contenedor_login{
+    display: flex;
+    align-items:center ;
+    width: 100%;
+    max-width: 380px;
+    position: absolute;
+    top: 185px;
+    left: 10px;
+}
+
+.contenedor_login form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login form h2{
+    padding: 10px 35px 0px;
+  
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(116, 148, 235);
+}
+
+.contenedor_login form input{
+    width: 100%;
+    margin-top: -25px;   
+    padding: 10px;
+    border: none;
+    background: whitesmoke;
+    font-size: 11px;
+    outline:none ;
+}
+
+.contenedor_login form button{
+    padding: 10px 35px;
+    margin-top: 30px;
+    border: none;
+    font-size: 12px;
+    background:rgb(116, 148, 235) ;
+    color: whitesmoke;
+    cursor: pointer;
+    outline:none ;
+}
+
+.contenedor_login form button:hover{
+    box-shadow:0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+.contenedor_login form button gmail {
+    padding: 10px 35px;
+    margin-top: 30px;
+    border: none;
+    font-size: 12px;
+    background:whitesmoke ;
+    color: whitesmoke;
+    cursor: pointer;
+    outline:none ;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__registro{
+      display: block;
+}
+
+.social-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-login-element{
+    width: 7.5rem;
+    height: 1.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background:whitesmoke   
+}
+
+.social-login-element:hover{
+    box-shadow:0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+.social-login-element img{
+    width: 1.875 rem;
+    height: 1.875 rem;
+    position: relative;
+    top: 50;
+    left: -0.625rem;     
+}
+
+.social-login img{
+    width: 30px;
+    border-radius: 10px;     
+}
+
+.contenedor_login p{
+    font-size: 0.9rem;
+    padding: 45px 35px 15px;
+}
+
+.indusfot-logo img{
+    
+    width: 80%;
+    position: relative;
+    left: 2rem; 
+    align-items: center;
+    padding: 10px 35px 30px;
+    margin-top: -50px;
+    
+
+}

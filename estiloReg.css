@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: url(../imagenes/indusoft.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 400px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__fondo{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur (10px) ;
+    background-color: rgba(0,128,255,0.2)
+}
+
+.caja__fondo div{
+    margin: 100px 40px;
+    color: seashell;
+    transition: all 500ms;
+}
+
+.caja__fondo div p,
+.caja__fondo div button {
+    margin-top: 30px;   
+}
+
+.caja__fondo div h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+.caja__fondo button{
+    padding: 10px 35px;
+    border: 1.5px solid #fff;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    color: whitesmoke;
+    outline:none ;
+    transition: 300ms;    
+}
+
+.caja__fondo button:hover{
+    background: whitesmoke;
+    color: rgb(116, 148, 235);
+    text-decoration: none
+}
+
+.contenedor_login{
+    display: left;
+    align-items:center ;
+    width: 100%;
+    max-width: 380px;
+    position: absolute;
+    top: -80px;
+    left: 400px;
+}
+
+.contenedor_login form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #ffffff ;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(116, 148, 235);
+}
+
+.contenedor_login form input{
+    width: 100%;
+    margin-top: 20px;   
+    padding: 10px;
+    border: none;
+    background: whitesmoke;
+    font-size: 12px;
+    outline:none ;
+}
+
+.contenedor_login form button{
+    padding: 10px 35px;
+    margin-top: 30px;
+    border: none;
+    font-size: 12px;
+    background:rgb(116, 148, 235) ;
+    color: whitesmoke;
+    cursor: pointer;
+    outline:none ;
+}
+
+.contenedor_login form button:hover{
+    box-shadow:0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+
+.formulario__registro{
+      display: block;
+}
+
+
+.indusfot-logo img{ 
+    width: 80%;
+    position: relative;
+    left: 2rem; 
+    align-items: center;
+    padding: 10px 35px 30px;
+    margin-top: -50px;
+}
