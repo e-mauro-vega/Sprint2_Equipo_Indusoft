@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indusoft</title>
+    <link rel="stylesheet" href="styls.css">
+</head>
+<h1>Registro de ventas</h1>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id_venta*</label><label class="validation-error hide" id="id_ventaValidationError">Este campo es requerido.</label>
+                        <input type="text" name="id_venta" id="id_venta">
+                    </div>
+                    <div>
+                        <label>fecha</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                    <div>
+                        <label>vendedor</label>
+                        <input type="text" name="vendedor" id="vendedor">
+                    </div>
+                    <div>
+                        <label>cliente</label>
+                        <input type="text" name="cliente" id="cliente">
+                    </div>
+                    <div>
+                        <label>id_cliente</label>
+                        <input type="text" name="id_cliente" id="id_cliente">
+                    </div>
+                    <div>
+                        <label>producto</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+                    <div>
+                        <label>cantidad</label>
+                        <input type="text" name="cantidad" id="cantidad">
+                    </div>
+                    <div>
+                        <label>valor_unitario</label>
+                        <input type="text" name="valor_unitario" id="valor_unitario">
+                    </div>
+                    <div>
+                        <label>valor_total</label>
+                        <input type="text" name="valor_total" id="valor_total">
+                    </div>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+                
+            </td>
+            <td>
+                <div class="indusfot-logo">
+                    <img src="imagenes/indusoft1.png" alt="logo-indusoft">
+                </div>
+                <table class="list" id="ventaslist">
+                    <thead>
+                        <tr>
+                            <th>id_venta</th>
+                            <th>fecha</th>
+                            <th>vendedor</th>
+                            <th>cliente</th>
+                            <th>id_cliente</th>
+                            <th>producto</th>
+                            <th>cantidad</th>
+                            <th>valor_unitario</th>
+                            <th>valor_total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+
+</body>
+</html>
